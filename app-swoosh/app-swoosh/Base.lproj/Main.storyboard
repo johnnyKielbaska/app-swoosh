@@ -135,6 +135,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="4oq-0P-6A6" eventType="touchUpInside" id="0zf-0h-5Or"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3g-d8-g5a" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="81" width="343" height="58"/>
@@ -146,6 +149,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="4oq-0P-6A6" eventType="touchUpInside" id="7dP-pO-KE9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AF-AG-5Da" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="162" width="343" height="58"/>
@@ -157,10 +163,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="4oq-0P-6A6" eventType="touchUpInside" id="F3G-zV-NcW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLd-C9-47B" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLd-C9-47B" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="589" width="343" height="58"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29427975169999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -213,6 +222,7 @@
                         <viewLayoutGuide key="safeArea" id="VOh-rc-vUt"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="vLd-C9-47B" id="uBa-e5-SS5"/>
                         <segue destination="CEl-P9-04s" kind="show" identifier="skillVCSegue" id="HYK-oG-Rcz"/>
                     </connections>
                 </viewController>
