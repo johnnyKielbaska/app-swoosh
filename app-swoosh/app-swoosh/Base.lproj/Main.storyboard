@@ -88,10 +88,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="ZkM-m1-r90" id="yHI-Q4-PEU"/>
-                        <outlet property="swoosh" destination="3Ti-gW-Q6G" id="a7N-mf-aT2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,6 +171,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="4oq-0P-6A6" eventType="touchUpInside" id="hE1-cM-yce"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZ0-Lz-gYL">
                                 <rect key="frame" x="0.0" y="30" width="57" height="30"/>
@@ -213,6 +212,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VOh-rc-vUt"/>
                     </view>
+                    <connections>
+                        <segue destination="CEl-P9-04s" kind="show" identifier="skillVCSegue" id="HYK-oG-Rcz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twz-MG-fS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="PpO-f3-rHF" userLabel="Exit" sceneMemberID="exit"/>
@@ -313,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H67-x9-Ei3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1456.8" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1772" y="36"/>
         </scene>
     </scenes>
     <resources>
